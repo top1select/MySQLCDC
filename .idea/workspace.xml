@@ -42,7 +42,7 @@
           <entry key="LICENSE" value="1" />
           <entry key="class" value="15" />
           <entry key="iml" value="2" />
-          <entry key="java" value="202" />
+          <entry key="java" value="205" />
           <entry key="md" value="11" />
           <entry key="properties" value="37" />
           <entry key="sh" value="7" />
@@ -54,7 +54,7 @@
         <counts>
           <entry key="CLASS" value="15" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="202" />
+          <entry key="JAVA" value="205" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="Properties" value="37" />
           <entry key="XML" value="16" />
@@ -63,7 +63,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="LICENSE" value="1" />
-          <entry key="java" value="345" />
+          <entry key="java" value="353" />
           <entry key="md" value="104" />
           <entry key="properties" value="172" />
           <entry key="xml" value="17" />
@@ -71,7 +71,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="345" />
+          <entry key="JAVA" value="353" />
           <entry key="PLAIN_TEXT" value="105" />
           <entry key="Properties" value="172" />
           <entry key="XML" value="17" />
@@ -81,11 +81,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fountain-examples/src/main/java/net/neoremind/fountain/test/consumer/BeidouAddbConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fountain-examples/src/main/java/net/neoremind/fountain/test/consumer/DefaultConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/datasource/AbstractHADatasource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="79" column="59" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
+            <state relative-caret-position="435">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#3586#3811#0" expanded="true" />
                 <element signature="e#3810#3811#0" expanded="true" />
@@ -96,6 +114,15 @@
                 <element signature="e#6516#6517#0" expanded="true" />
                 <element signature="e#6590#6591#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fountain-examples/src/main/java/net/neoremind/fountain/test/cmd/FountainApplicationLauncher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -112,8 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fountain-producer/src/main/java/net/neoremind/fountain/producer/datasource/ha/HAMysqlBinlogDataSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="255" column="32" selection-start-line="255" selection-start-column="32" selection-end-line="255" selection-end-column="32" />
+            <state relative-caret-position="258">
+              <caret line="260" column="13" lean-forward="true" selection-start-line="260" selection-start-column="13" selection-end-line="260" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -198,7 +225,6 @@
         <option value="$PROJECT_DIR$/fountain-runner/src/main/scripts/env.properties" />
         <option value="$PROJECT_DIR$/fountain-runner/src/main/java/net/neoremind/fountain/runner/FountainMain.java" />
         <option value="$PROJECT_DIR$/fountain-examples/src/main/java/net/neoremind/fountain/test/cmd/FountainApplicationLauncher.java" />
-        <option value="$PROJECT_DIR$/fountain-examples/src/main/java/net/neoremind/fountain/test/consumer/DefaultConsumer.java" />
         <option value="$PROJECT_DIR$/fountain-producer/src/main/java/net/neoremind/fountain/producer/datasource/binlogdump/BinlogGtIdV56DumpStrategy.java" />
         <option value="$PROJECT_DIR$/fountain-producer/src/main/java/net/neoremind/fountain/producer/parser/impl/DefaultParser.java" />
         <option value="$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/util/MysqlCommonConstants.java" />
@@ -225,6 +251,7 @@
         <option value="$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/datasource/HANormalMysqlDataSource.java" />
         <option value="$PROJECT_DIR$/fountain-producer/src/main/java/net/neoremind/fountain/producer/datasource/ha/HAMysqlBinlogDataSource.java" />
         <option value="$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/datasource/AbstractHADatasource.java" />
+        <option value="$PROJECT_DIR$/fountain-examples/src/main/java/net/neoremind/fountain/test/consumer/DefaultConsumer.java" />
       </list>
     </option>
   </component>
@@ -257,6 +284,61 @@
             <path>
               <item name="fountain-base" type="b2602c69:ProjectViewProjectNode" />
               <item name="fountain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -420,14 +502,14 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Analyze Dataflow to" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.21445782" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.2819277" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.2819277" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4313253" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -493,20 +575,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/eventposition/factory/GtIdSyncPointFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/eventposition/SyncPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/thread/annotaion/ThreadSafe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -785,13 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-examples/src/main/java/net/neoremind/fountain/test/cmd/FountainApplicationLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fountain-producer/src/main/java/net/neoremind/fountain/producer/SingleProducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -878,13 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-producer/src/main/java/net/neoremind/fountain/producer/datasource/ha/HAMysqlBinlogDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="255" column="32" selection-start-line="255" selection-start-column="32" selection-end-line="255" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/datasource/HANormalMysqlDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -892,10 +946,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-producer/src/main/java/net/neoremind/fountain/producer/datasource/ha/HAMysqlBinlogDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="260" column="13" lean-forward="true" selection-start-line="260" selection-start-column="13" selection-end-line="260" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/datasource/AbstractHADatasource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="79" column="59" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
+        <state relative-caret-position="435">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#3586#3811#0" expanded="true" />
             <element signature="e#3810#3811#0" expanded="true" />
@@ -906,6 +967,27 @@
             <element signature="e#6516#6517#0" expanded="true" />
             <element signature="e#6590#6591#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-examples/src/main/java/net/neoremind/fountain/test/cmd/FountainApplicationLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-examples/src/main/java/net/neoremind/fountain/test/consumer/BeidouAddbConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-examples/src/main/java/net/neoremind/fountain/test/consumer/DefaultConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>

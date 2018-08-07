@@ -10,7 +10,7 @@ import net.neoremind.fountain.eventposition.DisposeEventPositionBridge;
 /**
  * fountain-runner使用的默认消费者，使用模板方法模式，将消费逻辑委托给{@link ConsumeActor}去实现
  *
- * @author zhangxu
+ * @author bwang
  */
 //@PluggableConsumeActorEnabled
 public class DefaultConsumer implements Consumer, ConsumeActorAware {
