@@ -253,7 +253,7 @@ public class HAMysqlBinlogDataSource extends
     }
 
     @Override
-    protected void prepareChoosedDatasouce(BinlogDataSource choosedDattasource)
+    protected void prepareChosenDatasouce(BinlogDataSource choosedDattasource)
             throws IOException, NoSuchAlgorithmException, TimeoutException {
         choosedDattasource.openReplication();
     }

@@ -71,13 +71,13 @@ public abstract class AbstractHADatasource<T extends MysqlDataSource> implements
     /**
      * 初始化选中的数据源
      *
-     * @param choosedDattasource
+     * @param chosenDattasource
      *
      * @throws IOException
      * @throws NoSuchAlgorithmException
      * @throws TimeoutException
      */
-    protected abstract void prepareChoosedDatasouce(T choosedDattasource) throws IOException, NoSuchAlgorithmException,
+    protected abstract void prepareChosenDatasouce(T chosenDattasource) throws IOException, NoSuchAlgorithmException,
             TimeoutException;
 
     /**
@@ -192,11 +192,10 @@ public abstract class AbstractHADatasource<T extends MysqlDataSource> implements
                             TimeoutException {
                         if (!choosedDattasource.isOpen()) {
                             StringBuilder sb =
-                                    new StringBuilder("Choose new dataSource, [ip, port] is [")
-                                            .append(choosedDattasource.getIpAddress()).append(", ")
+                                    new StringBuilder(choosedDattasource.getIpAddress()).append(", ")
                                             .append(choosedDattasource.getPort()).append("]");
                             getLogger().info(sb.toString());
-                            prepareChoosedDatasouce(choosedDattasource);
+                            prepareChosenDatasouce(choosedDattasource);
                         }
                     }
 
@@ -226,7 +225,7 @@ public abstract class AbstractHADatasource<T extends MysqlDataSource> implements
         getLogger().info("Reconnect current datasource {}:{}", ds.getIpAddress(), ds.getPort());
 
         try {
-            prepareChoosedDatasouce(ds);
+            prepareChosenDatasouce(ds);
             return ds;
         } catch (NoSuchAlgorithmException e) {
             getLogger().error(null, e);

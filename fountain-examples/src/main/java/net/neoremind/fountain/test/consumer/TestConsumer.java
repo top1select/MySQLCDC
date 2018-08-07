@@ -52,25 +52,15 @@ public class TestConsumer implements Consumer {
      *
      * @param changeDataSet 数据变化
      */
-    protected void printTableData2(ChangeDataSet changeDataSet) {
-        Map<String, List<RowData>> tableData = changeDataSet.getTableData();
-        for (String tableName : tableData.keySet()) {
-            logger.info("TableName: " + tableName);
-            for (RowData rowData : tableData.get(tableName)) {
-                logger.info("Before:" + rowData.getBeforeColumnList());
-                logger.info("After:" + rowData.getAfterColumnList());
-            }
-        }
-    }
-
+    // change nested for loops to stream and lambda functions
     protected void printTableData(ChangeDataSet changeDataSet) {
         Map<String, List<RowData>> tableData = changeDataSet.getTableData();
         tableData.keySet().stream().forEach((tableName) -> {
             logger.info("TableName: " + tableName);
-            tableData.get(tableName).stream().forEach((RowData rowData) ->
+            tableData.get(tableName).stream().forEach((rowData) ->
             {
-                logger.info("Beforedd:" + rowData.getBeforeColumnList());
-                logger.info("Afterdd:" + rowData.getAfterColumnList());
+                logger.info("Before data:" + rowData.getBeforeColumnList());
+                logger.info("After data:" + rowData.getAfterColumnList());
             });
         });
     }

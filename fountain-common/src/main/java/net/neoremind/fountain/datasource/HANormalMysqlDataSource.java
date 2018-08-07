@@ -35,7 +35,7 @@ public class HANormalMysqlDataSource extends AbstractHADatasource<MysqlDataSourc
     }
 
     @Override
-    protected void prepareChoosedDatasouce(MysqlDataSource choosedDattasource) throws IOException,
+    protected void prepareChosenDatasouce(MysqlDataSource choosedDattasource) throws IOException,
             NoSuchAlgorithmException, TimeoutException {
         choosedDattasource.open();
     }
