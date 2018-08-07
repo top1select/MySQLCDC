@@ -39,10 +39,11 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="000006" value="1" />
+          <entry key="LICENSE" value="1" />
           <entry key="class" value="15" />
           <entry key="iml" value="2" />
           <entry key="java" value="200" />
-          <entry key="md" value="10" />
+          <entry key="md" value="11" />
           <entry key="properties" value="37" />
           <entry key="sh" value="7" />
           <entry key="txt" value="2" />
@@ -54,15 +55,16 @@
           <entry key="CLASS" value="15" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="200" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="PLAIN_TEXT" value="22" />
           <entry key="Properties" value="37" />
           <entry key="XML" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="LICENSE" value="1" />
           <entry key="java" value="250" />
-          <entry key="md" value="103" />
+          <entry key="md" value="104" />
           <entry key="properties" value="172" />
           <entry key="xml" value="17" />
         </counts>
@@ -70,7 +72,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="250" />
-          <entry key="PLAIN_TEXT" value="103" />
+          <entry key="PLAIN_TEXT" value="105" />
           <entry key="Properties" value="172" />
           <entry key="XML" value="17" />
         </counts>
@@ -79,7 +81,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/datasource/AbstractHADatasource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2385">
@@ -94,6 +96,24 @@
                 <element signature="e#6516#6517#0" expanded="true" />
                 <element signature="e#6590#6591#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -184,6 +204,8 @@
         <option value="$PROJECT_DIR$/fountain-producer/src/main/java/net/neoremind/fountain/producer/AbstractProducer.java" />
         <option value="$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/datasource/AbstractHADatasource.java" />
         <option value="$PROJECT_DIR$/fountain-examples/src/main/java/net/neoremind/fountain/test/consumer/TestConsumer.java" />
+        <option value="$PROJECT_DIR$/LICENSE" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -452,20 +474,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/thread/annotaion/UnThreadSafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple-zk-client/src/main/java/net/neoremind/simplezkclient/ZkClientProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fountain-common/src/main/java/net/neoremind/fountain/eventposition/factory/BinlogAndOffsetSyncPointFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -891,6 +899,20 @@
             <element signature="e#6516#6517#0" expanded="true" />
             <element signature="e#6590#6591#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,5 @@
-# Fountain
+# MySQLCDC
+MySQL Change Data Capture
 [![Build Status](https://travis-ci.org/neoremind/fountain.svg?branch=master)](https://travis-ci.org/neoremind/fountain)
 ![](https://maven-badges.herokuapp.com/maven-central/net.neoremind/fountain-producer/badge.svg)
 
@@ -339,3 +340,4 @@ LocalFileBinlogAndOffsetDisposeEventPosition
 Contributors include [neoremind](https://github.com/neoremind), [rolandhe](https://github.com/rolandhe), [tianjige](https://github.com/tiandarwin), hanxu
 
 [参考文献](wiki/appendix.md)
+
