@@ -90,10 +90,14 @@ public class MysqlCommonConstants {
          */
         ON("ON"),
 
+        ON_PERMISSIVE("ON_PERMISSIVE"),
+
         /**
          * ROW
          */
         OFF("OFF");
+
+
 
         private GtIdMode(final String value) {
             this.value = value;

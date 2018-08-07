@@ -11,7 +11,7 @@ import net.neoremind.fountain.exception.HalfDataSocketTimeoutException;
 import net.neoremind.fountain.exception.ParamErrorException;
 
 /**
- * 操作socket的帮住类，支持写入读取数据到socket，封装操作socket的内部细节和异常处理
+ * 操作socket的helper类，支持写入读取数据到socket，封装操作socket的内部细节和异常处理
  *
  * @author hexiufeng, zhangxu
  */

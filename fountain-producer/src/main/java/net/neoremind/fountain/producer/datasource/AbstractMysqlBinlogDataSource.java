@@ -110,12 +110,12 @@ public abstract class AbstractMysqlBinlogDataSource extends AbstractMysqlDataSou
     }
 
     @Override
-    public SyncPoint persitSyncPoint(SyncPoint point) {
-        return persitSyncPoint(point, true);
+    public SyncPoint persistSyncPoint(SyncPoint point) {
+        return persistSyncPoint(point, true);
     }
 
     @Override
-    public SyncPoint persitSyncPoint(SyncPoint point, boolean isPersist) {
+    public SyncPoint persistSyncPoint(SyncPoint point, boolean isPersist) {
         if (isPersist) {
             disposeEventPosition.saveSyncPoint(point);
             ThreadHolder.SYNC_POINT_CACHE.set(point);

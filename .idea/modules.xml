@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/consumer-spi/consumer-spi.iml" filepath="$PROJECT_DIR$/consumer-spi/consumer-spi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fountain-base.iml" filepath="$PROJECT_DIR$/fountain-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fountain-common/fountain-common.iml" filepath="$PROJECT_DIR$/fountain-common/fountain-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fountain-examples/fountain-examples.iml" filepath="$PROJECT_DIR$/fountain-examples/fountain-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fountain-producer/fountain-producer.iml" filepath="$PROJECT_DIR$/fountain-producer/fountain-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fountain-runner/fountain-runner.iml" filepath="$PROJECT_DIR$/fountain-runner/fountain-runner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fountain-sync/fountain-sync.iml" filepath="$PROJECT_DIR$/fountain-sync/fountain-sync.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fountain-zk-support/fountain-zk-support.iml" filepath="$PROJECT_DIR$/fountain-zk-support/fountain-zk-support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ha-guard/ha-guard.iml" filepath="$PROJECT_DIR$/ha-guard/ha-guard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-zk-client/simple-zk-client.iml" filepath="$PROJECT_DIR$/simple-zk-client/simple-zk-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zk-ha-guard/zk-ha-guard.iml" filepath="$PROJECT_DIR$/zk-ha-guard/zk-ha-guard.iml" />
+    </modules>
+  </component>
+</project>

@@ -48,7 +48,7 @@ public interface BinlogDataSource extends MysqlDataSource {
      *
      * @return 最终同步点
      */
-    SyncPoint persitSyncPoint(SyncPoint point);
+    SyncPoint persistSyncPoint(SyncPoint point);
 
     /**
      * 持久化同步点
@@ -58,7 +58,7 @@ public interface BinlogDataSource extends MysqlDataSource {
      *
      * @return 最终同步点
      */
-    SyncPoint persitSyncPoint(SyncPoint point, boolean isPersist);
+    SyncPoint persistSyncPoint(SyncPoint point, boolean isPersist);
 
     /**
      * 唯一表示本数据源的名字

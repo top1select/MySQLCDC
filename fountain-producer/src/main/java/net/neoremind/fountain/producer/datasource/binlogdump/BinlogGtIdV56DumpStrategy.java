@@ -46,7 +46,8 @@ public class BinlogGtIdV56DumpStrategy extends AbstractBinlogDumpStrategy implem
         return doIsSupport(dataSource, new MySQLVersionValidationCallback() {
             @Override
             public String getCheckFieldRegex() {
-                return "5.6.*";
+//                return "5.6.*";
+                return "5.*";
             }
         }, new BinlogRowFormatValidationCallback(), new GtIdModeValidationCallback());
     }

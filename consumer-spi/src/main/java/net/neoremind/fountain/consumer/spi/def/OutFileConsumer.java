@@ -154,7 +154,7 @@ public class OutFileConsumer extends AbstractConsumeSingleChangeSetConsumer impl
             return;
         }
         fileLines++;
-        ChangeDataSet ds = (ChangeDataSet) event;
+        ChangeDataSet ds = event;
         LOGGER.info(ds.toString());
     }
 

@@ -67,7 +67,7 @@ public class HAMysqlBinlogDataSource extends
 
     private final MonitorHelper monitorHelper = new MonitorHelper();
 
-    private final ScheduledExecutorService monitorScheduler = Executors
+    private final ScheduledExecutorService monitorScheduler1 = Executors
             .newScheduledThreadPool(1, new ThreadFactory() {
 
                 @Override
@@ -76,6 +76,10 @@ public class HAMysqlBinlogDataSource extends
                 }
 
             });
+
+    private final ScheduledExecutorService monitorScheduler = Executors
+            .newScheduledThreadPool(1, ((Runnable r)-> new Thread(r, "monitorScheduler-thread")
+            ));
 
     public DisposeEventPosition getDisposeEventPosition() {
         return disposeEventPosition;
@@ -143,12 +147,13 @@ public class HAMysqlBinlogDataSource extends
             logger.info(
                     "Start monitoring thread for MySQL master status, monitorPeriod:{}min, monitorInitialDelay:{}min",
                     monitorPeriod, monitorInitialDelay);
-            monitorScheduler.scheduleAtFixedRate(new Runnable() {
-                @Override
-                public void run() {
-                    moniterHandler();
-                }
-            }, monitorInitialDelay, monitorPeriod, TimeUnit.MINUTES);
+            monitorScheduler.scheduleAtFixedRate(()-> moniterHandler(),
+//                    new Runnable() {
+//                @Override
+//                public void run() {
+//                    moniterHandler();
+//                }},
+            monitorInitialDelay, monitorPeriod, TimeUnit.MINUTES);
         }
     }
 
@@ -173,12 +178,12 @@ public class HAMysqlBinlogDataSource extends
     }
 
     @Override
-    public SyncPoint persitSyncPoint(SyncPoint point) {
-        return persitSyncPoint(point, true);
+    public SyncPoint persistSyncPoint(SyncPoint point) {
+        return persistSyncPoint(point, true);
     }
 
     @Override
-    public SyncPoint persitSyncPoint(SyncPoint point, boolean isPersist) {
+    public SyncPoint persistSyncPoint(SyncPoint point, boolean isPersist) {
         SyncPoint mergedPoint = mergePoint(point);
         
         if (isPersist) {

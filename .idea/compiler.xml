@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="consumer-spi" />
+        <module name="fountain-common" />
+        <module name="fountain-examples" />
+        <module name="fountain-producer" />
+        <module name="fountain-runner" />
+        <module name="fountain-sync" />
+        <module name="fountain-zk-support" />
+        <module name="ha-guard" />
+        <module name="simple-zk-client" />
+        <module name="zk-ha-guard" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer-spi" target="1.6" />
+      <module name="fountain-base" target="1.6" />
+      <module name="fountain-common" target="1.6" />
+      <module name="fountain-examples" target="8" />
+      <module name="fountain-examples (1)" target="1.6" />
+      <module name="fountain-producer" target="8" />
+      <module name="fountain-runner" target="1.6" />
+      <module name="fountain-sync" target="1.6" />
+      <module name="fountain-zk-support" target="1.6" />
+      <module name="ha-guard" target="1.6" />
+      <module name="simple-zk-client" target="1.6" />
+      <module name="zk-ha-guard" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -80,7 +80,7 @@ public class DefaultProducer extends AbstractProducer implements
     @Override
     protected void endTrans(BaseLogEvent event) {
         if (event instanceof XidLogEvent) {
-            getDataSource().persitSyncPoint(createSyncPoint(event));
+            getDataSource().persistSyncPoint(createSyncPoint(event));
             return;
         }
         if (event instanceof QueryLogEvent) {
@@ -90,7 +90,7 @@ public class DefaultProducer extends AbstractProducer implements
             }
             query = query.toLowerCase().trim();
             if (query.equals("rollback")) {
-                getDataSource().persitSyncPoint(createSyncPoint(event));
+                getDataSource().persistSyncPoint(createSyncPoint(event));
             }
         }
     }

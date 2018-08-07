@@ -193,7 +193,7 @@ public class LocalFileDisposeEventPosition extends RegistableDisposeEventPositio
 
     public static void main(String[] args) {
         LocalFileDisposeEventPosition dp = new LocalFileDisposeEventPosition();
-        dp.setRootPath("/Users/baidu/work/fountain/test");
+        dp.setRootPath("/Users/willw/Downloads/JavaProjects/fountain/logs");
         dp.registerInstance("test00");
         //dp.saveSyncPoint(new BaiduGroupIdSyncPoint(BigInteger.valueOf(100L)));
         SyncPoint syncPoint = dp.loadSyncPoint();

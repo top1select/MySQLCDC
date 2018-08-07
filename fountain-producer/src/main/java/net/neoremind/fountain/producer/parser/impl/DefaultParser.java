@@ -149,7 +149,7 @@ public class DefaultParser implements Parser {
                 EOFPacket eofPacket = new EOFPacket();
                 eofPacket.fromBytes(buff.array());
                 throw new EOFException(
-                        "Receive EOF Packet! May be Mysql is closed or you have another client with the same slaveId "
+                        "Receive EOF Packet! Maybe Mysql is closed or you have another client with the same slaveId "
                                 + "connected! Warning count is "
                                 + eofPacket.getWarningCount()
                                 + ", statusFlags is "

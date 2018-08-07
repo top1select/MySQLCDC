@@ -52,7 +52,7 @@ public class TestConsumer implements Consumer {
      *
      * @param changeDataSet 数据变化
      */
-    protected void printTableData(ChangeDataSet changeDataSet) {
+    protected void printTableData2(ChangeDataSet changeDataSet) {
         Map<String, List<RowData>> tableData = changeDataSet.getTableData();
         for (String tableName : tableData.keySet()) {
             logger.info("TableName: " + tableName);
@@ -61,6 +61,18 @@ public class TestConsumer implements Consumer {
                 logger.info("After:" + rowData.getAfterColumnList());
             }
         }
+    }
+
+    protected void printTableData(ChangeDataSet changeDataSet) {
+        Map<String, List<RowData>> tableData = changeDataSet.getTableData();
+        tableData.keySet().stream().forEach((tableName) -> {
+            logger.info("TableName: " + tableName);
+            tableData.get(tableName).stream().forEach((RowData rowData) ->
+            {
+                logger.info("Beforedd:" + rowData.getBeforeColumnList());
+                logger.info("Afterdd:" + rowData.getAfterColumnList());
+            });
+        });
     }
 
     /**

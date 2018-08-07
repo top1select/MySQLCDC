@@ -157,9 +157,19 @@ public abstract class AbstractProducer implements SingleProducer, BeanNameAware,
     @Override
     public void start() {
         init();
-        Thread t = new Thread(new Runnable() {
-            @Override
-            public void run() {
+//        Thread t = new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                if (dbCharset != null) {
+//                    UnsignedNumberHelper.configCharset(dbCharset);
+//                }
+//                registerWorkflow();
+//                threadStartWait.countDown();
+//                threadHandler();
+//            }
+//        });
+        Thread t = new Thread(() ->{
+
                 if (dbCharset != null) {
                     UnsignedNumberHelper.configCharset(dbCharset);
                 }
@@ -167,7 +177,7 @@ public abstract class AbstractProducer implements SingleProducer, BeanNameAware,
                 threadStartWait.countDown();
                 threadHandler();
             }
-        });
+        );
         t.setName("fountain-" + this.getInstanceName() + "-" + t.getId());
         t.start();
         try {
@@ -243,15 +253,15 @@ public abstract class AbstractProducer implements SingleProducer, BeanNameAware,
         /**
          * 历史总增量事件数量
          */
-        long totalIncrmentCount;
+        long totalIncrementCount;
         /**
          * 计算周期内的增量事件数量
          */
-        long incrmentCount;
+        long incrementCount;
 
         void doOne(Logger logger) {
-            totalIncrmentCount++;
-            incrmentCount++;
+            totalIncrementCount++;
+            incrementCount++;
             if (startTime == 0) {
                 startTime = System.currentTimeMillis();
                 lastTime = startTime;
@@ -259,24 +269,24 @@ public abstract class AbstractProducer implements SingleProducer, BeanNameAware,
             }
             long now = System.currentTimeMillis();
             if (now - lastTime > intervalTimeInMilli) {
-                float totalQpm = totalIncrmentCount / ((now - startTime) / intervalTimeInMilli);
-                float qpm = incrmentCount / ((now - lastTime) / intervalTimeInMilli);
+                float totalQpm = totalIncrementCount / ((now - startTime) / intervalTimeInMilli);
+                float qpm = incrementCount / ((now - lastTime) / intervalTimeInMilli);
                 StringBuilder sb = new StringBuilder();
                 sb.append("upTime=");
                 sb.append(now - startTime);
                 sb.append("ms,totalIncrementCount=");
-                sb.append(totalIncrmentCount);
+                sb.append(totalIncrementCount);
                 sb.append(",QPM=");
                 sb.append(String.format("%.2f", totalQpm));
                 sb.append(". cycleTime=");
                 sb.append(now - lastTime);
                 sb.append("ms,incrementCount=");
-                sb.append(incrmentCount);
+                sb.append(incrementCount);
                 sb.append(",QPM=");
                 sb.append(String.format("%.2f", qpm));
                 logger.info(sb.toString());
                 lastTime = now;
-                incrmentCount = 0;
+                incrementCount = 0;
             }
         }
     }
@@ -284,7 +294,7 @@ public abstract class AbstractProducer implements SingleProducer, BeanNameAware,
     /**
      * 每线程粒度控制处理效率信息
      */
-    private static final ThreadLocal<ProfilingInfo> PROFLING_INFO =
+    private static final ThreadLocal<ProfilingInfo> PROFILING_INFO =
             new ThreadLocal<ProfilingInfo>() {
                 @Override
                 protected ProfilingInfo initialValue() {
@@ -392,7 +402,7 @@ public abstract class AbstractProducer implements SingleProducer, BeanNameAware,
                     }
                     handleDispatch(ds);
                     if (enableProfilingPrintInfo) {
-                        PROFLING_INFO.get().doOne(getLogger());
+                        PROFILING_INFO.get().doOne(getLogger());
                     }
                 }
 

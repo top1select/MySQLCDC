@@ -167,7 +167,7 @@ public abstract class AbstractHADatasource<T extends MysqlDataSource> implements
     }
 
     /**
-     * 从备选数据源列表中选中可用的数据源源，具体的选择会被委托到{@link DatasourceChoosePolicy DatasourceChoosePolicy}
+     * 从备选数据源列表中选中可用的数据源，具体的选择会被委托到{@link DatasourceChoosePolicy DatasourceChoosePolicy}
      * 中， 选中的数据源需要使用{@link DatasourceChooseCallbackHandler
      * DatasourceChooseCallbackHandler}来回调做一些初始化操作。
      *
@@ -177,7 +177,7 @@ public abstract class AbstractHADatasource<T extends MysqlDataSource> implements
     protected void chooseMysqlDataSource() throws IOException, NoSuchAlgorithmException {
         T bak = currentDataSource;
         safeCloseCurrent();
-        currentDataSource = recconectCurrent(bak);
+        currentDataSource = reconnectCurrent(bak);
 
         if (currentDataSource != null) {
             return;
@@ -191,8 +191,8 @@ public abstract class AbstractHADatasource<T extends MysqlDataSource> implements
                     public void doCallback(T choosedDattasource) throws IOException, NoSuchAlgorithmException,
                             TimeoutException {
                         if (!choosedDattasource.isOpen()) {
-                            StringBuffer sb =
-                                    new StringBuffer("Choose new dataSource, [ip, port] is [")
+                            StringBuilder sb =
+                                    new StringBuilder("Choose new dataSource, [ip, port] is [")
                                             .append(choosedDattasource.getIpAddress()).append(", ")
                                             .append(choosedDattasource.getPort()).append("]");
                             getLogger().info(sb.toString());
@@ -218,7 +218,7 @@ public abstract class AbstractHADatasource<T extends MysqlDataSource> implements
      *
      * @return 重连成功的数据源，null表示重连失败或者当前没有数据源
      */
-    private T recconectCurrent(T ds) {
+    private T reconnectCurrent(T ds) {
         if (ds == null) {
             return ds;
         }
