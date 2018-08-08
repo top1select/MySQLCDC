@@ -1,11 +1,8 @@
 # MySQLCDC
 MySQL Change Data Capture
-[![Build Status](https://travis-ci.org/neoremind/fountain.svg?branch=master)](https://travis-ci.org/neoremind/fountain)
+[![Build Status](https://travis-ci.org/neoremind/fountain.svg?branch=master)](https://github.com/top1select/MySQLCDC)
 ![](https://maven-badges.herokuapp.com/maven-central/net.neoremind/fountain-producer/badge.svg)
 
-Fountain是监查、捕捉MySQL数据库的增量变化，分发数据变化给消费者处理的一套解决方案。
-
-Fountain，英[ˈfaʊntən]，是”源泉“的意思，MySQL数据库源源不断的下发增量，因此而得名。
 
 ## 1. Fountain能做什么？
 任何需要快速、准确接收MySQL数据变化增量的场景均适用，例如
